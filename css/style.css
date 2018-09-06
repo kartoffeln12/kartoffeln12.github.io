@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+    font-style: normal;
+    text-align: center;
+    font-size: 3vw;
+}
+
+section {
+    background-image: url(../images/ordiDef.jpg);
+    object-fit: cover;
+    background-position: top;
+    background-attachment: top;
+    background-repeat: no-repeat;
+    background-size: 95%;
+}
+
+section div {
+	margin-top: 3vh;
+	min-height: 70vh;
+}
+
+footer {
+	min-height: 20vh;
+	margin-top: 3vh;
+}
+
+footer a {
+    color: #008080;
+    text-align: center;
+}
+
+footer img:hover {
+	border: 0.2em solid #008080;
+	border-radius: 50%;
+}
+
+img {
+    width: 95%;
+}
+
+footer img {
+    width: 6%;
+}
+
+/* smartphone landscape à tablet portrait */
+@media screen and (max-width: 990px) {
+	section {
+    background-image: url(../images/mobileDef.jpg);
+    object-fit: cover;
+    background-position: top;
+    background-attachment: top;
+    background-repeat: no-repeat;
+    background-size: 95%;
+	}
+
+	section div {
+	margin-top: 2vh;
+	min-height: 80vh;
+	}
+
+	footer img {
+    width: 12%;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+	}
+}
