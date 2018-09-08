@@ -5,18 +5,19 @@
 }
 
 body {
+    background-color: black;
 	height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
     font-family: 'Roboto Mono', monospace;
+    color: white;
     text-align: justify;
     font-style: normal;
     text-align: center;
     font-size: 3vw;
 }
 
+/* images de fond (source : ../images) */
 section {
     background-image: url(../images/ordiDef.jpg);
     object-fit: cover;
@@ -41,20 +42,17 @@ footer a {
     text-align: center;
 }
 
+/* bordure autour des logos :hover */;
 footer img:hover {
 	border: 0.2em solid #008080;
 	border-radius: 50%;
-}
-
-img {
-    width: 95%;
 }
 
 footer img {
     width: 6%;
 }
 
-/* smartphone landscape à tablet portrait */
+/* adapte le visuel aux format smartphone et tablet portrait */
 @media screen and (max-width: 990px) {
 	section {
     background-image: url(../images/mobileDef.jpg);
