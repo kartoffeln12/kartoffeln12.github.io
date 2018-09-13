@@ -42,7 +42,7 @@ footer a {
     text-align: center;
 }
 
-/* bordure autour des logos :hover */;
+/* bordure autour des logos :hover */
 footer img:hover {
 	border: 0.2em solid #008080;
 	border-radius: 50%;
