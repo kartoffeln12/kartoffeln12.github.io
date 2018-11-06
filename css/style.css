@@ -6,20 +6,20 @@
 
 body {
     background-color: black;
-	height: 100vh;
+	height: 95vh;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: whitesmoke;
     text-align: justify;
     font-style: normal;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2.2em;
 }
 
 /* images de fond (source : ../images) */
 section {
-    background-image: url(../images/ordiDef.jpg);
+    background-image: url(../images/ordiEP.jpg);
     object-fit: cover;
     background-position: top;
     background-attachment: top;
@@ -27,14 +27,45 @@ section {
     background-size: 95%;
 }
 
-section div {
+section #background-height {
+    position: relative;
 	margin-top: 3vh;
 	min-height: 70vh;
 }
 
+#block-link {
+    background-color: rgb(48,48,48,0.8);
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#link a {
+    color: 008080;
+    margin: 5px;
+    border-radius: 10px;
+}
+#link a:link, #link a:visited {
+    background-color: 008080;
+    color: #008080;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#link a:hover, #link a:active {
+    text-shadow: 2px 2px 8px teal;
+    color: whitesmoke;
+    opacity: 95%;
+}
+
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 	min-height: 20vh;
-	margin-top: 3vh;
+    width: 100%;
 }
 
 footer a {
@@ -52,25 +83,48 @@ footer img {
     width: 6%;
 }
 
+#contact {
+    font-size: 0.4em;
+}
+#contact a {
+    text-decoration: none;
+    color: whitesmoke;    
+}
+#contact a:hover {
+    text-shadow: 2px 2px 8px teal;
+}
+
 /* adapte le visuel aux format smartphone et tablet portrait */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 768px) {
+    body {
+    font-size: 1.5em;
+    }
 	section {
-    background-image: url(../images/mobileDef.jpg);
-    object-fit: cover;
-    background-position: top;
-    background-attachment: top;
-    background-repeat: no-repeat;
-    background-size: 95%;
+    background-image: url(../images/mobileEP.jpg);
 	}
 
-	section div {
+	section #background-height {
 	margin-top: 2vh;
-	min-height: 80vh;
+	min-height: 75vh;
 	}
 
+
+    footer{
+    min-height: 15vh;
+    }
 	footer img {
     width: 12%;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
 	}
+}
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    section {
+    background-image: url(../images/mobileEP.jpg);
+    background-position: 50% -70px;
+    max-height: 70%;	
+	}
+	#contact {
+    font-size: 0.6em;
+}
 }
