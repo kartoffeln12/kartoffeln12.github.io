@@ -91,10 +91,10 @@ footer img {
     color: whitesmoke;    
 }
 #contact a:hover {
-    text-shadow: 2px 2px 8px teal;
+    text-shadow: 6px 4px 18px teal;
 }
 
-/* adapte le visuel aux format smartphone et tablet portrait */
+/* adapte le visuel aux format smartphone*/
 @media screen and (max-width: 768px) {
     body {
     font-size: 1.5em;
@@ -118,6 +118,8 @@ footer img {
     margin-left: 0.2em;
 	}
 }
+
+/* et tablet portrait */
 @media screen and (min-width: 768px) and (max-width: 1100px) {
     section {
     background-image: url(../images/mobileEP.jpg);
