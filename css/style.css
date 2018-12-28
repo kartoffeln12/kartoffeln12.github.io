@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-	height: 95vh;
+    min-height: 600px;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
@@ -29,12 +29,12 @@ section {
 
 section #background-height {
     position: relative;
-	margin-top: 3vh;
-	min-height: 70vh;
+    margin-top: 3vh;
+    min-height: 70vh;
 }
 
 #block-link {
-    background-color: rgb(48,48,48,0.8);
+    background-color: rgb(48, 48, 48, 0.8);
     position: absolute;
     bottom: 10px;
     width: 100%;
@@ -47,6 +47,7 @@ section #background-height {
     margin: 5px;
     border-radius: 10px;
 }
+
 #link a:link, #link a:visited {
     background-color: 008080;
     color: #008080;
@@ -54,6 +55,7 @@ section #background-height {
     text-decoration: none;
     display: inline-block;
 }
+
 #link a:hover, #link a:active {
     text-shadow: 2px 2px 8px teal;
     color: whitesmoke;
@@ -64,7 +66,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-	min-height: 20vh;
+    min-height: 20vh;
     width: 100%;
 }
 
@@ -75,8 +77,8 @@ footer a {
 
 /* bordure autour des logos :hover */
 footer img:hover {
-	border: 0.2em solid #008080;
-	border-radius: 50%;
+    border: 0.2em solid #008080;
+    border-radius: 50%;
 }
 
 footer img {
@@ -86,10 +88,12 @@ footer img {
 #contact {
     font-size: 0.4em;
 }
+
 #contact a {
     text-decoration: none;
-    color: whitesmoke;    
+    color: whitesmoke;
 }
+
 #contact a:hover {
     text-shadow: 6px 4px 18px teal;
 }
@@ -97,36 +101,38 @@ footer img {
 /* adapte le visuel aux format smartphone*/
 @media screen and (max-width: 768px) {
     body {
-    font-size: 1.5em;
+        font-size: 1.5em;
     }
-	section {
-    background-image: url(../images/mobileEP.jpg);
-	}
 
-	section #background-height {
-	margin-top: 2vh;
-	min-height: 75vh;
-	}
-
-
-    footer{
-    min-height: 15vh;
+    section {
+        background-image: url(../images/mobileEP.jpg);
     }
-	footer img {
-    width: 12%;
-    margin-right: 0.2em;
-    margin-left: 0.2em;
-	}
+
+    section #background-height {
+        margin-top: 2vh;
+        min-height: 75vh;
+    }
+
+    footer {
+        min-height: 15vh;
+    }
+
+    footer img {
+        width: 12%;
+        margin-right: 0.2em;
+        margin-left: 0.2em;
+    }
 }
 
 /* et tablet portrait */
 @media screen and (min-width: 768px) and (max-width: 1100px) {
     section {
-    background-image: url(../images/mobileEP.jpg);
-    background-position: 50% -70px;
-    max-height: 70%;	
-	}
-	#contact {
-    font-size: 0.6em;
-}
+        background-image: url(../images/mobileEP.jpg);
+        background-position: 50% -70px;
+        max-height: 70%;
+    }
+
+    #contact {
+        font-size: 0.6em;
+    }
 }
